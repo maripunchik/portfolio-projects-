@@ -1,0 +1,18 @@
+:root {
+	--body-color: #efefef;
+	--nav-color: #1876f2;
+	--bg-color: #fff;
+	--color-border: #999;
+	--color-border-light: #ccc;
+
+	--color-text: #000000;
+	--hover-bg: rgba(0, 0, 0, 0.05);
+}
+
+.dark-theme {
+	--body-color: #0a0a0a;
+	--nav-color: #1876f2;
+
+	--bg-color: #000;
+	--hover-bg: rgba(215, 207, 207, 0.05);
+}

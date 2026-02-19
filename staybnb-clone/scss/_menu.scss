@@ -1,0 +1,96 @@
+.menu {
+	display: flex;
+	gap: toRem(30);
+
+	// .menu__link
+	&__link {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		gap: toRem(6);
+		padding: toRem(8) toRem(10);
+		color: #fff;
+
+		transition: color 0.3s ease;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: toRem(-4);
+			transform: translateX(-50%) scaleX(0);
+			transform-origin: center;
+			width: toRem(25);
+			height: toRem(2);
+			background-color: currentColor;
+			border-radius: toRem(2);
+			transition:
+				transform 0.3s,
+				background-color 0.3s ease;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ff5361;
+			}
+
+			&:hover::after {
+				transform: translateX(-50%) scaleX(1);
+			}
+		}
+
+		&--active::after {
+			transform: translateX(-50%) scaleX(1);
+			background-color: #ff5361;
+		}
+
+		&--first::after {
+			transform: translateX(-50%) scaleX(1);
+			background-color: #fff;
+		}
+
+		@media (max-width: $bp-desktop) {
+			width: auto;
+			font-size: toRem(13);
+		}
+
+		@media (max-width: $bp-tablet) {
+			font-size: toRem(16);
+			padding: 0;
+
+			&--active::after {
+				left: -15%;
+				top: 50%;
+				transform: translateX(-50%) scaleX(1);
+			}
+
+			&--first::after {
+				left: -15%;
+				top: 50%;
+				transform: translateX(-50%) scaleX(1);
+			}
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover .menu__link--first::after {
+			transform: translateX(-50%) scaleX(0);
+		}
+
+		.menu__link.menu__link--first:hover::after {
+			transform: translateX(-50%) scaleX(1);
+			background-color: #ff5361;
+		}
+	}
+
+	@media (max-width: $bp-desktop-lg) and (min-width: $bp-tablet) {
+		gap: toRem(15);
+	}
+
+	@media (max-width: $bp-tablet) {
+		flex-direction: column;
+		align-items: flex-end;
+		gap: toRem(15);
+		padding-top: toRem(10);
+	}
+}

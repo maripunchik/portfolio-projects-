@@ -1,0 +1,110 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: toRem(10);
+	padding: toRem(20) 7%;
+
+	background: transparent;
+
+	&--white {
+		background: #fff;
+		box-shadow: 0 toRem(5) toRem(10) rgba(0, 0, 0, 0.05);
+
+		.menu__link {
+			color: #000;
+
+			&--first::after {
+				background: #ff5361;
+			}
+		}
+
+		.nav__register {
+			background: #ff5361;
+			color: #fff;
+		}
+	}
+
+	// .nav__logo
+	&__logo {
+		width: toRem(140);
+
+		@media (max-width: $bp-tablet) {
+			position: fixed;
+			top: 2%;
+			left: 7%;
+		}
+	}
+
+	// .nav__logo-img
+	&__logo-img {
+		width: 100%;
+		cursor: pointer;
+	}
+
+	// .nav__register
+	&__register {
+		background: #fff;
+		color: #000;
+		padding: toRem(8) toRem(20);
+		border-radius: toRem(20);
+		font-size: toRem(14);
+		transition:
+			color 0.3s ease,
+			background 0.3s ease,
+			transform 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	// .nav__burger
+	&__burger {
+		display: none;
+
+		@media (max-width: $bp-tablet) {
+			display: block;
+			position: fixed;
+			top: 3%;
+			right: 7%;
+			color: #fff;
+			font-size: toRem(28);
+		}
+	}
+
+	@media (max-width: $bp-desktop-lg) and (min-width: $bp-tablet) {
+		padding: toRem(20) 5%;
+	}
+
+	@media (max-width: $bp-tablet) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: toRem(20);
+		padding: toRem(60) 7% toRem(8);
+		background: #000;
+		max-height: toRem(60);
+		overflow: hidden;
+		transition: max-height 0.5s;
+
+		&--open {
+			max-height: toRem(250);
+		}
+
+		&--white {
+			background: #fff;
+
+			.nav__burger {
+				color: #000;
+			}
+
+		}
+	}
+}

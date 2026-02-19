@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Staybnb(clone) - Listing Page</title>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="icons/site.webmanifest">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/3d0a468d11.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!-- header -->
+	<header class="header header--inner">
+		<nav class="nav nav--white" id="navBar">
+			<a href="index.html" class="nav__logo">
+				<img src="images/logo-red.png" alt="Travel Agency Logo" class="nav__logo-img">
+			</a>
+			<ul class="menu nav__menu">
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Popular Places</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Travel Outside</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Online Packages</a>
+				</li>
+			</ul>
+
+			<div class="nav__actions">
+				<a href="#" class="btn btn--primary nav__register">Register Now</a>
+				<button type="button" class="nav__burger">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<!-- main -->
+	<main class="page">
+		<div class="page__container">
+			<!-- list -->
+			<section class="list">
+				<div class="list__container">
+
+					<div class="list__content">
+						<p class="list__count">200+ Options</p>
+						<h1 class="list__title">Recommended Places In San Francisco</h1>
+
+						<div class="list__items" id="house-list">
+						</div>
+
+					</div>
+
+					<aside class="list__sidebar" id="sidebar-container">
+					</aside>
+				</div>
+			</section>
+
+			<!-- pagination -->
+			<div class="page__pagination pagination">
+				<svg class="pagination__arrow pagination__arrow--left">
+					<use xlink:href="images/sprite.svg#arrow-left"></use>
+				</svg>
+				<span class="pagination__span pagination__span--current">1</span>
+				<span class="pagination__span">2</span>
+				<span class="pagination__span">3</span>
+				<span class="pagination__span">4</span>
+				<span class="pagination__span">5</span>
+				<span class="pagination__span">&middot; &middot; &middot; &middot;</span>
+				<span class="pagination__span">20</span>
+				<svg class="pagination__arrow pagination__arrow--right">
+					<use xlink:href="images/sprite.svg#arrow-left"></use>
+				</svg>
+
+			</div>
+
+		</div>
+	</main>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer__container">
+
+			<nav class="footer__socials">
+				<a class="footer__link" href="https://facebook.com/" aria-label="Facebook">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<a class="footer__link" href="https://youtube.com/" aria-label="YouTube">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a class="footer__link" href="https://twitter.com/" aria-label="Twitter">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a class="footer__link" href="https://linkedin.com/" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+				<a class="footer__link" href="https://instagram.com/" aria-label="Instagram">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</nav>
+
+			<div class="footer__divider"></div>
+
+			<div class="footer__copyright">
+				<p>Staybnb © 2025. All rights reserved.</p>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>

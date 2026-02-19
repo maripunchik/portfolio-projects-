@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Staybnb-clone</title>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/icons/site.webmanifest">
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/3d0a468d11.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header header--home">
+		<nav class="nav header__nav" id="navBar">
+			<a href="index.html" class="nav__logo">
+				<img src="images/logo.png" alt="Travel Agency Logo" class="nav__logo-img">
+			</a>
+			<ul class="menu nav__menu">
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Popular Places</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Travel Outside</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Online Packages</a>
+				</li>
+			</ul>
+
+			<div class="nav__actions">
+				<a href="#" class="btn nav__register">Register Now</a>
+				<button type="button" class="nav__burger">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</nav>
+
+		<div class="header__content container">
+			<h1 class="header__title">Find Your Next Stay</h1>
+			<div class="search-bar header__search-bar">
+				<form class="search-bar__form">
+					<div class="search-bar__field search-bar__field--location">
+						<label class="search-bar__label" for="location">Location</label>
+						<input id="location" class="search-bar__input" type="text" placeholder="Where are you going">
+					</div>
+					<div class="search-bar__field">
+						<label class="search-bar__label" for="checkin">Check in</label>
+						<input id="checkin" class="search-bar__input" type="text" placeholder="Add Date">
+					</div>
+					<div class="search-bar__field">
+						<label class="search-bar__label" for="checkout">Check out</label>
+						<input id="checkout" class="search-bar__input" type="text" placeholder="Add Date">
+					</div>
+					<div class="search-bar__field">
+						<label class="search-bar__label" for="guest">Guest</label>
+						<input id="guest" class="search-bar__input" type="text" placeholder="Add Guest">
+					</div>
+					<button class="btn search-bar__button" type="submit">
+						<svg class="icon">
+							<use xlink:href="images/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+
+		</div>
+	</header>
+
+	<!-- main -->
+	<main class="page">
+		<div class="page__container">
+			<!-- exclusives -->
+			<h2 class="page__subtitle">Exclusives</h2>
+			<div class="page__exclusives exclusives" id="exclusives-container"></div>
+
+			<!-- trending -->
+			<h2 class="page__subtitle">Trending Places</h2>
+			<div class="page__trending trending" id="trending-container"></div>
+
+			<!-- cta -->
+			<div class="page__cta cta">
+				<h3 class="cta__title">Sharing <br> Is Earning Now</h3>
+				<div class="cta__text">
+					<p>Great opporttunity to make money by <br> sharing your extra space.</p>
+				</div>
+				<a href="#" class="btn cta__btn">Know More</a>
+			</div>
+
+			<!-- stories -->
+			<h2 class="page__subtitle">Travellers Stories</h2>
+			<div class="page__stories stories">
+				<div class="stories__item">
+					<img class="stories__image" src="images/story-1.png" alt="Image">
+					<p>Popular Europian countries with a budget of just $10,000</p>
+				</div>
+				<div class="stories__item">
+					<img class="stories__image" src="images/story-2.png" alt="Image">
+					<p>Traveled more than 100 Countries in less than a year</p>
+				</div>
+				<div class="stories__item">
+					<img class="stories__image" src="images/story-3.png" alt="Image">
+					<p>Best experience you get while travelling to Thailand</p>
+				</div>
+			</div>
+
+			<a href="#" class="page__start-btn btn btn--large">Start making money</a>
+
+			<!-- about-msg -->
+			<div class="page__about about">
+				<h2 class="about__title">About Staybnb</h2>
+				<div class="about__text">
+					<p>Contrary to popular belief, Lorem ipsum dolor is not simply random text. It was roots in a piece of
+						classical Lattin litterature from 45BC, making it over 2000 years old. Richard McClintock, a Latin
+						professor
+						at Hampden-Sydney College in Virginia, looked up one of more obscure Latin words, consectetur, from a
+						Lorem
+						Ipsum passage, and going through cites of the word in classical literature, discovered the undoubtable
+						source.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer__container">
+
+			<nav class="footer__socials">
+				<a class="footer__link" href="https://facebook.com/" aria-label="Facebook">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<a class="footer__link" href="https://youtube.com/" aria-label="YouTube">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a class="footer__link" href="https://twitter.com/" aria-label="Twitter">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a class="footer__link" href="https://linkedin.com/" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+				<a class="footer__link" href="https://instagram.com/" aria-label="Instagram">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</nav>
+
+			<div class="footer__divider"></div>
+
+			<div class="footer__copyright">
+				<p>Staybnb © 2025. All rights reserved.</p>
+			</div>
+
+		</div>
+	</footer>
+
+	<script type="module" src="js/script.js"></script>
+</body>
+
+</html>

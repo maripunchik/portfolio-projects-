@@ -1,0 +1,126 @@
+.header {
+	width: 100%;
+
+	&--home {
+		min-height: 100vh;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	&--inner {
+	}
+
+	// .header__title
+	&__title {
+		font-size: clamp(20px, 4vw, 60px);
+		font-weight: 500;
+		color: #fff;
+		text-align: center;
+		padding-top: 22%;
+		text-transform: capitalize;
+
+		@media (max-width: $bp-tablet) {
+			padding-top: 100px;
+			font-size: 7vw;
+		}
+	}
+}
+
+.search-bar {
+	background: #fff;
+	width: 70%;
+	margin: toRem(30) auto;
+	padding: toRem(6) toRem(10) toRem(6) toRem(30);
+	border-radius: toRem(50);
+	// .search-bar__form
+	&__form {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: toRem(5);
+	}
+
+	// .search-bar__field
+	&__field {
+		flex: 1;
+
+		&--location {
+			min-width: toRem(180);
+		}
+	}
+
+	// .search-bar__input
+	&__input {
+		display: block;
+		outline: none;
+	}
+
+	// .search-bar__button
+	&__button {
+		@include size(55, 55);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media (max-width: $bp-tablet) {
+			position: static;
+			transform: none;
+			margin: 10px auto 0;
+		}
+	}
+
+	.icon {
+		@include size(15, 15);
+	}
+
+	@media (max-width: $bp-desktop-lg) and (min-width: $bp-tablet) {
+		padding-inline-start: toRem(15);
+
+		&__field {
+			font-size: toRem(14);
+		}
+
+		&__field--location {
+			min-width: toRem(150);
+		}
+
+		&__button {
+			@include size(40, 40);
+		}
+
+		.icon {
+			@include size(13, 13);
+		}
+	}
+
+	@media (max-width: $bp-tablet) {
+		max-width: toRem(450);
+		width: 90%;
+		margin: toRem(30) auto;
+		padding: toRem(20) toRem(10) toRem(20);
+		border-radius: toRem(5);
+		position: relative;
+
+		&__form {
+			flex-direction: column;
+			gap: toRem(20);
+			align-items: flex-start;
+		}
+		&__field {
+			width: 100%;
+		}
+		&__input {
+			border-bottom: toRem(1) solid #ddd;
+			width: 100%;
+			padding-bottom: toRem(10);
+		}
+		&__button {
+			// position: absolute;
+			// bottom: 0;
+			// left: 50%;
+			// transform: translate(-50%, 50%);
+		}
+	}
+}

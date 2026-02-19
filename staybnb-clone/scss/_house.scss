@@ -1,0 +1,103 @@
+.house {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: toRem(30) 0;
+	border-top: toRem(1) solid var(--color-border-light);
+	gap: toRem(20);
+
+	@media (max-width: $bp-desktop-lg) {
+		flex-direction: column;
+
+		&__img,
+		&__info {
+			flex: none;
+			width: 100%;
+		}
+	}
+	// .house__img
+	&__img {
+		flex: 0 0 40%;
+		border-radius: toRem(12);
+		overflow: hidden;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.15);
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		@media (any-hover: hover) {
+			&:hover::after {
+				opacity: 1;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	// .house__info
+	&__info {
+		flex: 1;
+		color: #555;
+	}
+
+	// .house__location
+	&__location {
+		@media (max-width: $bp-desktop-lg) {
+			font-size: toRem(14);
+		}
+	}
+
+	// .house__title
+	&__title {
+		font-weight: 600;
+		color: #333;
+		font-size: toRem(22);
+		margin: toRem(4) 0;
+
+		@media (max-width: $bp-tablet) {
+			font-size: toRem(18);
+		}
+	}
+
+	// .house__details
+	&__details {
+	}
+
+	// .house__rating
+	&__rating {
+		color: #ff5361;
+		font-size: toRem(18);
+		margin: toRem(10) toRem(1);
+		@media (max-width: $bp-tablet) {
+			font-size: toRem(16);
+		}
+	}
+
+	// .house__price
+	&__price {
+		text-align: right;
+	}
+
+	// .house__guests
+	&__guests {
+	}
+
+	// .house__cost
+	&__cost {
+		font-size: toRem(20);
+		font-weight: 600;
+
+		span {
+			font-size: toRem(16);
+			font-weight: 500;
+		}
+	}
+}

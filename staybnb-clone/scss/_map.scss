@@ -1,0 +1,30 @@
+.map {
+	padding: toRem(40) 0;
+	// .map__title
+	&__title {
+		font-size: toRem(26);
+		font-weight: 500;
+		margin-bottom: toRem(30);
+	}
+
+	// .map__frame
+	&__frame {
+		height: toRem(450);
+		overflow: hidden;
+		border-radius: toRem(12);
+
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .map__location
+	&__location {
+		display: block;
+		margin-bottom: toRem(16);
+		font-weight: 600;
+		font-size: toREm(18);
+	}
+
+}

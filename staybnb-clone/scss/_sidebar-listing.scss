@@ -1,0 +1,42 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: toRem(10);
+	border: toRem(1) solid #999;
+	padding: toRem(20) toRem(30);
+	margin-top: toRem(30);
+
+	// .sidebar__subtitle
+	// .sidebar__title,
+	&__title,
+	&__subtitle {
+		font-weight: 500;
+	}
+
+	// .sidebar__filter
+	&__filter {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+		gap: toRem(10);
+		color: #555;
+	}
+
+	// .sidebar__filter-input
+	&__filter-input {
+		cursor: pointer;
+	}
+
+	// .sidebar__filter-label
+	&__filter-label {
+	}
+
+	// .sidebar__filter-count
+	&__filter-count {
+	}
+
+	// .sidebar__link
+	&__link {
+		align-self: flex-end;
+	}
+}

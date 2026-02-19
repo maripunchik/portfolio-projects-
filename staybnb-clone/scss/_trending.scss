@@ -1,0 +1,42 @@
+.trending {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: toRem(10) toRem(30);
+
+	// .trending__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(10);
+		align-items: flex-start;
+		border-radius: toRem(10);
+	}
+	// .trending__img-wrapper
+	&__img-wrapper {
+		width: 100%;
+		border-radius: toRem(10);
+		overflow: hidden;
+	}
+
+	// .trending__img
+	&__img {
+		display: block;
+		width: 100%;
+		border-radius: toRem(10);
+		object-fit: cover;
+		will-change: transform;
+
+		transition: transform 0.3s ease;
+
+		@media (any-hover: hover) {
+			.trending__item:hover & {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	// .trending__title
+	&__title {
+		font-weight: 600;
+	}
+}

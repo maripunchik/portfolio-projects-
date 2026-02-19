@@ -1,0 +1,145 @@
+.page {
+	padding-block: toRem(50);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(50);
+
+		@media (max-width: $bp-tablet) {
+			gap: toRem(20);
+		}
+	}
+
+	&__subtitle {
+		font-size: clamp(toRem(18), 2.2vw, toRem(28));
+		font-weight: 500;
+		color: #333;
+	}
+
+	// .page__start-btn
+	&__start-btn {
+		align-self: center;
+		width: 80%;
+		max-width: toRem(350);
+		display: block;
+		text-align: center;
+		padding: toRem(15);
+		border-radius: toRem(30);
+	}
+}
+
+.cta {
+	background-image: linear-gradient(to right, #3f2321, transparent), url(../images/banner-2.png);
+	background-size: cover;
+	background-position: center;
+	border-radius: toRem(10);
+	padding: 5%;
+	color: #fff;
+
+	// .cta__title
+	&__title {
+		font-size: 4vw;
+		line-height: 5.3vw;
+		font-weight: 500;
+	}
+
+	// .cta__text
+	&__text {
+		font-size: toRem(18);
+		margin: toRem(10) 0;
+	}
+
+	// .cta__btn
+	&__btn {
+		padding: toRem(12) toRem(30);
+		border-radius: toRem(8);
+		margin-top: toRem(20);
+	}
+
+	@media (max-width: $bp-tablet) {
+		padding: 15% 5%;
+
+		&__title {
+			font-size: 7vw;
+			line-height: 8vw;
+		}
+
+		&__text {
+			font-size: toRem(15);
+		}
+
+		&__btn {
+			padding: toRem(6) toRem(15);
+			border-radius: toRem(4);
+			font-size: toRem(14);
+		}
+	}
+}
+
+.stories {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(toRem(200), 1fr));
+	gap: toRem(10) toRem(30);
+	margin-bottom: toRem(30);
+
+	// .stories__item
+	&__item {
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+		border-radius: toRem(10);
+		aspect-ratio: 1 / 1;
+
+		p {
+			width: 80%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: toRem(26);
+
+			@media (max-width: $bp-tablet) {
+				font-size: toRem(22);
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover .stories__image {
+				filter: brightness(60%);
+				transform: scale(1.03) translateY(-5px);
+			}
+		}
+	}
+
+	// .stories__image
+	&__image {
+		width: 100%;
+		object-fit: cover;
+		border-radius: toRem(10);
+		will-change: transform;
+
+		transition:
+			transform 0.4s ease,
+			filter 0.4s ease;
+		transform: scale(1) translateY(0);
+	}
+}
+
+.about {
+	text-align: center;
+	color: #333;
+	font-size: toRem(17);
+
+	@media (max-width: $bp-tablet) {
+		font-size: toRem(15);
+	}
+
+	// .about__title
+	&__title {
+		font-size: toRem(28);
+		margin-bottom: toRem(30);
+		font-weight: 500;
+	}
+}

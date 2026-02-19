@@ -1,0 +1,43 @@
+button,
+input,
+textarea {
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.4;
+	color: var(--color-text);
+
+	background-color: var(--bg-color);
+	transition: background-color 0.3s;
+}
+
+a {
+	color: var(--color-text);
+}
+
+[class*="__container"] {
+	padding: 0 7%;
+}
+
+.btn {
+	background: #ff5361;
+	color: #fff;
+	font-size: toRem(17);
+	transition:
+		background 0.3s ease,
+		transform 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: darken(#ff5361, 8%);
+			transform: translateY(toRem(-2));
+		}
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+
+}

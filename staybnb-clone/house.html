@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Staybnb(clone) - House Details Page</title>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="icons/site.webmanifest">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/3d0a468d11.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!-- header -->
+	<header class="header header--inner">
+		<nav class="nav nav--white" id="navBar">
+			<a class="nav__logo" href="index.html">
+				<img src="images/logo-red.png" alt="Travel Agency Logo" class="nav__logo-img">
+			</a>
+			<ul class="menu nav__menu">
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Popular Places</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Travel Outside</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="listing.html">Online Packages</a>
+				</li>
+			</ul>
+
+			<div class="nav__actions">
+				<a href="#" class="btn btn--primary nav__register">Register Now</a>
+				<button type="button" class="nav__burger">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<!-- main -->
+	<main class="page">
+		<div class="page__container">
+			<!-- house-details -->
+			<section class="house-details">
+				<div class="house-details__rows">
+					<h1 class="house-details__title">Wenge House</h1>
+					<div class="house-details__row">
+						<div class="rating house-details__rating">
+							<div class="rating__icons">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half-stroke"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<span class="rating__text">235 reviews</span>
+						</div>
+						<div class="house-details__location">
+							<p>Location: San Francisco, California, United States</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- gallery -->
+			<section class="gallery">
+				<div class="gallery__item gallery__item--large">
+					<img class="gallery__img" src="images/house-1.png" alt="Main view of Wenge House">
+				</div>
+				<div class="gallery__item">
+					<img class="gallery__img" src="images/house-2.png" alt="Living room">
+				</div>
+				<div class="gallery__item">
+					<img class="gallery__img" src="images/house-3.png" alt="Bedroom">
+				</div>
+				<div class="gallery__item">
+					<img class="gallery__img" src="images/house-4.png" alt="Host Brandon photo">
+				</div>
+				<div class="gallery__item">
+					<img class="gallery__img" src="images/house-5.png" alt="Host Brandon photo">
+				</div>
+			</section>
+			<!-- small-details -->
+			<section class="small-details">
+				<h2 class="small-details__title">Entire rental unit hosted by Brandon</h2>
+				<p class="small-details__info">2 guests &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+				<h4 class="small-details__price">$ 100 / day</h4>
+			</section>
+			<hr class="page__line">
+			<!-- check-form -->
+			<form class="check-form" action="#">
+				<div class="check-form__item">
+					<label class="check-form__label">Check-in</label>
+					<input class="check-form__input" type="text" placeholder="Add date">
+				</div>
+				<div class="check-form__item">
+					<label class="check-form__label">Check-out</label>
+					<input class="check-form__input" type="text" placeholder="Add date">
+				</div>
+				<div class="check-form__item check-form__item--guest-field">
+					<label class="check-form__label">Guest</label>
+					<input class="check-form__input" type="text" placeholder="2 guest">
+				</div>
+				<button class="btn check-form__btn" type="submit">Check Availability</button>
+			</form>
+			<!-- details-list -->
+			<ul class="details-list">
+				<li class="details-list__item">
+					<i class="details-list__icon fa-regular fa-house"></i>
+					<h3 class="details-list__title">Entire Home</h3>
+					<span class="details-list__text">You will have the entire flat for you.</span>
+				</li>
+
+				<li class="details-list__item">
+					<i class="details-list__icon fa-solid fa-paintbrush"></i>
+					<h3 class="details-list__title">Enhanced Clean</h3>
+					<span class="details-list__text">This host has committed to staybnb's cleaning process.</span>
+				</li>
+
+				<li class="details-list__item">
+					<i class="details-list__icon fa-solid fa-location-dot"></i>
+					<h3 class="details-list__title">Great Location</h3>
+					<span class="details-list__text">90% of recent guests gave the location 5 stars.</span>
+				</li>
+
+				<li class="details-list__item">
+					<i class="details-list__icon fa-solid fa-heart"></i>
+					<h3 class="details-list__title">Great Check-in Experience</h3>
+					<span class="details-list__text">100% of recent guests gave the check-in 5 stars.</span>
+				</li>
+			</ul>
+
+			<hr class="page__line">
+			<!-- home-desc -->
+			<div class="page__home-desc">
+				<p>Guests will be allocated on the ground floor according to availability. You get a comfortable Two
+					bedroom
+					apartment has a true city feeling. The price quoted is for two guest, at the guest slot please mark
+					the
+					number of guests to get the exact price for groups.</p>
+			</div>
+
+			<hr class="page__line">
+			<!-- page__map -->
+			<section class="map">
+				<h3 class="map__title">Location on map</h3>
+				<div class="map__frame">
+
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.000618269149!2d2.29211357684647!3d48.85819860071946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe1f2191c61%3A0xbebb039573ca673b!2zQ2hhbXAgZGUgTWFycywgNSBBdi4gQW5hdG9sZSBGcmFuY2UsIDc1MDA3IFBhcmlzLCDQpNGA0LDQvdGG0LjRjw!5e0!3m2!1sru!2scz!4v1770367972772!5m2!1sru!2scz"
+						allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+
+				</div>
+				<b class="map__location">Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France
+				</b>
+				<p class="map__desc">It's like a home away from home.</p>
+			</section>
+
+			<hr class="page__line">
+			<!-- host -->
+			<section class="host">
+				<div class="host__avatar avatar">
+					<img class="avatar__image" src="images/host.png" alt="Host Avatar">
+				</div>
+				<div class="host__response">
+					<h2 class="host__title">Posted by Brandon</h2>
+
+					<div class="rating host__rating">
+						<div class="rating__icons">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+						</div>
+						<div class="rating__span-row">
+							<span>245 reviews</span>
+							<span>Response rate 100%</span>
+							<span>&</span>
+							<span>Response time: 60min</span>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<a class="page__host-contact" href="#">Contact Host</a>
+		</div>
+	</main>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer__container">
+
+			<nav class="footer__socials">
+				<a class="footer__link" href="https://facebook.com/" aria-label="Facebook">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<a class="footer__link" href="https://youtube.com/" aria-label="YouTube">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a class="footer__link" href="https://twitter.com/" aria-label="Twitter">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+				<a class="footer__link" href="https://linkedin.com/" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+				<a class="footer__link" href="https://instagram.com/" aria-label="Instagram">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</nav>
+
+			<div class="footer__divider"></div>
+
+			<div class="footer__copyright">
+				<p>Staybnb © 2025. All rights reserved.</p>
+			</div>
+
+		</div>
+	</footer>
+
+	<script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>

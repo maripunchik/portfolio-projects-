@@ -1,0 +1,58 @@
+"use strict";
+
+export const houseData = [
+  {
+    id: 1,
+    image: "images/image-s1.png",
+    location: "Private Villa in San Francisco",
+    title: "Deluxe Queen Room With Street View",
+    details: "1 Bedroom / 1 Bathroom / Wifi / Kitchen",
+    guests: "2 Guests",
+    cost: "$ 100",
+  },
+  {
+    id: 2,
+    image: "images/image-s2.png",
+    location: "Modern Apartment in Downtown",
+    title: "Cozy Studio With City Skyline View",
+    details: "1 Bedroom / 1 Bathroom / Wifi / Mini Kitchen",
+    guests: "1 Guest",
+    cost: "$ 85",
+  },
+  {
+    id: 3,
+    image: "images/image-s3.png",
+    location: "Beach House in Santa Monica",
+    title: "Oceanfront Suite With Balcony",
+    details: "2 Bedrooms / 1 Bathroom / Wifi / Kitchen",
+    guests: "4 Guests",
+    cost: "$ 180",
+  },
+  {
+    id: 4,
+    image: "images/image-s4.png",
+    location: "Luxury Condo in Los Angeles",
+    title: "Premium King Room With Pool Access",
+    details: "1 Bedroom / 1 Bathroom / Wifi / Gym / Pool",
+    guests: "2 Guests",
+    cost: "$ 150",
+  },
+  {
+    id: 5,
+    image: "images/image-s5.png",
+    location: "Cabin in Lake Tahoe",
+    title: "Mountain View Wooden Cabin",
+    details: "3 Bedrooms / 2 Bathrooms / Fireplace / Kitchen",
+    guests: "6 Guests",
+    cost: "$ 220",
+  },
+  {
+    id: 6,
+    image: "images/image-s6.png",
+    location: "Boutique Hotel in San Diego",
+    title: "Superior Double Room With Terrace",
+    details: "1 Bedroom / 1 Bathroom / Wifi / Breakfast Included",
+    guests: "2 Guests",
+    cost: "$ 130",
+  },
+];
